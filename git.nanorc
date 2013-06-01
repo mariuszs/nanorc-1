@@ -37,8 +37,6 @@ COMMENT: "#"
 # Trailing spaces (+LINT is not ok, git uses tabs)
 color ,red "[[:space:]]+$"
 
-#ESCAPE:   "\\."
-
 # This syntax format is used for interactive rebasing
 syntax "git rebase todo" "git-rebase-todo"
 
