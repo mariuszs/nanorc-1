@@ -34,3 +34,8 @@
     r mixins/longline.nanorc
     d
 }
+/^+OPTION/ {
+    r mixins/option.nanorc
+    d
+}
+        

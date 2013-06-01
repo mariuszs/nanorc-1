@@ -1,0 +1,3 @@
+color brightwhite "--[a-z-]+"
+color white "\ -[a-z]+"
+

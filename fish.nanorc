@@ -1,0 +1,22 @@
+# Syntax higlighting for nano editor beta by mariuszs+gmail.com
+syntax "fish" "\.fish$"
+
+FUNCTION: "^[A-Za-z0-9_+-]+[[:space:]]*\(\)"
+KEYWORD:  "\<(alias|begin|break|case|continue|contains|else|end|for|function|if|in|math|return|switch|test|while)\>"
+KEYWORD:  "\<(and|isatty|not|or)\>"
+MACRO: "\<(fish_user_key_bindings|fish_prompt|fish_right_prompt)\>"
+WARNING: "\<(fish_pager)\>"
+FUNCTION: "\<(bg|bind|block|breakpoint|builtin|cd|command|commandline|complete|dirh|dirs|echo|emit|eval|exec|exit)\>"
+FUNCTION: "\<(fg|fish|fish_config|fish_ident|fish_update_completions|fishd)\>"
+FUNCTION: "\<(funced|funcsave|functions|help|history|jobs|mimedb|nextd|open|popd|prevd|psub|pushd|pwd|random|read)\>"
+FUNCTION: "\<(set|set_color|status|trap|type|ulimit|umask|vared)\>"
++OPTION
+OPERATOR: "[{}()<>!=&|;`$]|\\|\[|\]|-(eq|ne|gt|lt|ge|le|s|n|z)\>"
+STRING:   ""(\\.|[^"])*""
+VARIABLE: "\$\{?[A-Za-z0-9_!@#$*?-]+\}?|`[^`]*`"
+STRING:   "'(\\.|[^'])*'"
+ESCAPE:   "\\.?"
++HASHCOMMENT
++TODO
++LINT
+
